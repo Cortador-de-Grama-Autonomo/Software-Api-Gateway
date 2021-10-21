@@ -1,0 +1,1 @@
+web: gunicorn cortador_api.wsgi --log-file
