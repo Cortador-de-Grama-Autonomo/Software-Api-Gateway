@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('SECRET_KEY', default=False, cast=bool)
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['https://cortador-api.herokuapp.com/', 'localhost:8000']
+ALLOWED_HOSTS = ['https://cortador-api.herokuapp.com/', 'http://localhost:8000', 'http://127.0.0.1:8000']
 
 
 # Application definition
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'cortador_api.wsgi.application'
 #     }
 # }
 
-default_dburl = 'sqllite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dburl) }
 
 # Password validation
