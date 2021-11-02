@@ -1,3 +1,5 @@
+![smartgrass-logo](./.github/assets/logo.png)
+
 # Software-Api-Gateway
 
 Repositório de Desenvolvimento dos Códigos de Software do API Gateway, para intermediação entre os dados salvos no backend e o consumo dos mesmos pelo cortador ou pelos aplicativos mobile.
@@ -109,7 +111,7 @@ De forma que o elemento **PREFIXO** siga o seguinte padrão
 
 Para a padronização das branches foi tomada uma adaptação do modelo padrão do [gitflow](https://nvie.com/posts/a-successful-git-branching-model/) conforme representado pelo diagrama abaixo:
 
-![gitflow-adapted](./images/gitflow_adapted_tag.png)
+![gitflow-adapted](./.github/assets/gitflow_adapted_tag.png)
 
 Esse modelo segue a seguinte categorização para as respectivas branches:
 
