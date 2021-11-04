@@ -18,9 +18,11 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 from base.api.viewsets import GrassMachineViewSet
+from locations.api.viewsets import LocationsViewSet
 
 router = routers.DefaultRouter()
 router.register(r'grassmachine', GrassMachineViewSet)
+router.register(r'locations', LocationsViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
