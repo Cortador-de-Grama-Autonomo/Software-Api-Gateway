@@ -4,4 +4,4 @@ from base.models import GrassMachine
 class GrassMachineSerializer(ModelSerializer):
     class Meta:
         model = GrassMachine
-        fields = ['id', 'model', 'qr_code_identifier', 'description', 'owner']
+        fields = ['id', 'name', 'serie_number', 'battery_percentage', 'model', 'power', 'voltage', 'motor_type', 'cut_type', 'rotation_number', 'qr_code_identifier', 'owner']

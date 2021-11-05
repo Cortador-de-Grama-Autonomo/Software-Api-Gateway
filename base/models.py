@@ -16,6 +16,5 @@ class GrassMachine(models.Model):
     qr_code_identifier = models.CharField(max_length=20, unique=True, default='')
     owner = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
 
-
     def __str__(self) -> str:
         return self.model + self.qr_code_identifier
