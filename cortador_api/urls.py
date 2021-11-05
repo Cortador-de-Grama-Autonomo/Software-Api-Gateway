@@ -19,6 +19,7 @@ from django.conf.urls import include
 from rest_framework import routers
 from base.api.viewsets import GrassMachineViewSet
 from locations.api.viewsets import LocationsViewSet
+from rest_framework.authtoken import views
 
 router = routers.DefaultRouter()
 router.register(r'grassmachine', GrassMachineViewSet)
@@ -27,4 +28,5 @@ router.register(r'locations', LocationsViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
+    path('api-token-auth/', views.obtain_auth_token)
 ]
